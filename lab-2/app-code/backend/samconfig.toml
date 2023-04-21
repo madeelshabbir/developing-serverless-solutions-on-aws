@@ -1,0 +1,10 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "<stack_name>"
+s3_bucket = "<replace_s3>"
+s3_prefix = "sam-app"
+region = "<AWS_REGION>"
+capabilities = "CAPABILITY_IAM"
+parameter_overrides = "StackName=\"\" APIGatewayStageName=\"dev\" LambdaDeploymentRole=\"<LambdaRoleARN>\""

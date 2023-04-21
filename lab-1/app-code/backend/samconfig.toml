@@ -1,0 +1,13 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "sam-bookmark-app"
+s3_bucket = "<BUCKET_NAME>"
+s3_prefix = "sam-app"
+region = "<AWS_REGION>"
+capabilities = "CAPABILITY_IAM"
+parameter_overrides = "APIGatewayStageName=\"dev\" LambdaDeploymentRole=\"<LAMBDA_ROLE_ARN>\""
+
+
+
